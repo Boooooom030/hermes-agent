@@ -15,4 +15,4 @@ def test_generic_mcp_paths_run_without_the_catalog_module(monkeypatch):
     from tui_gateway.mcp_rpc_helpers import record_mcp_add
 
     assert _configured_names() == ["mine"]
-    record_mcp_add(None, {"url": "https://mcp.example.test/mcp"}, True)
+    record_mcp_add({"url": "https://mcp.example.test/mcp"}, True)
